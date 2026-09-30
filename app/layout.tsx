@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Poppins, Urbanist } from 'next/font/google'
-// @ts-expect-error CSS is handled by Next.js at build time.
+
 import './globals.css'
 const sans = Urbanist({ subsets: ['latin'], variable: '--font-sans' })
 const display = Poppins({
