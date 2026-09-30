@@ -79,9 +79,9 @@ export default function Hero() {
             </p>
             <Avatars className='mt-1' />
           </div>
-          {/* <Squiggle className='absolute -left-10 top-0 h-16 w-40 -rotate-[35deg] sm:-left-24 sm:h-24 sm:w-56' /> */}
-          <Squiggle className='absolute left-[-150px] top-[190px] h-[385px] w-[385px]  hidden sm:block' />
-          <Cylinder className='absolute right-[-165px] top-[190px] h-[385px] w-[385px]  hidden sm:block' />
+
+          <Squiggle className='absolute left-[-210px] top-[221px] h-[385px] w-[385px]  hidden sm:block' />
+          <Cylinder className='absolute right-[-235px] top-[190px] h-[385px] w-[385px]  hidden sm:block' />
           <SquiggleMini className='absolute   left-[100px] top-[350px]  rotate-[-60deg] h-[175px] w-[175px] hidden sm:block ' />
           <Ring className='absolute  left-[-50px]  bottom-2 h-[350px] w-[350px] hidden sm:block' />
           <Cone className='absolute right-[100px] top-[400px] h-[200px] w-[200px]   hidden sm:block' />
