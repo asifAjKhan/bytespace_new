@@ -66,7 +66,7 @@ export default function Hero() {
           <div className='absolute w-[232px] h-[131px]   right-2 top-[500px] left-[700px] rounded-xl bg-white p-3 text-left font-bold  text-ink sm:block'>
             <p className='text-[15px]'>Learning Progress</p>
             <p className='text-3xl font-semibold'>55%</p>
-            <div className='mt-1 h-1 rounded bg-ink'>
+            <div className='mt-1 h-1 rounded bg-[#f6f6f6dc]'>
               <div className='h-1 w-1/2 rounded  bg-lime' />
             </div>
           </div>
