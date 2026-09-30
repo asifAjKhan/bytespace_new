@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+.auth-grid {
+  background-color: #0038e2;
+  background-image:
+    linear-gradient(#1f53e6 1px, transparent 1px),
+    linear-gradient(90deg, #1f53e6 1px, transparent 1px);
+  background-size: 120px 120px;
+  background-position: -1px -1px;
+}
+body {
+  @apply bg-white font-sans text-ink antialiased overflow-x-hidden;
+}
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
