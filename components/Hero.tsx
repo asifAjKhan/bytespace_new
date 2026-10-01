@@ -28,17 +28,21 @@ export default function Hero() {
         </p>
         <form
           role='search'
-          className='mx-auto mt-12 flex max-w-[460px] items-center gap-2 rounded-full bg-white p-1.5 text-ink'
+          className='mx-auto mt-12 flex w-full max-w-[540px] items-center gap-[13px] text-ink'
         >
-          <Search size={14} className='ml-3 shrink-0 text-muted' />
-          <input
-            aria-label='Search'
-            placeholder='Course, topic, creator'
-            className='min-w-0 flex-1 bg-transparent text-xs outline-none placeholder:text-muted'
-          />
+          <div className='flex h-[52px] min-w-0 flex-1 items-center gap-2.5 rounded-full bg-white px-5'>
+            <Search size={15} className='shrink-0 text-muted' />
+            <input
+              aria-label='Search'
+              placeholder='Course, topic, creator'
+              className='min-w-0 flex-1 bg-transparent text-[15px] outline-none placeholder:text-muted'
+              style={{ fontFamily: 'Satoshi, var(--font-sans), sans-serif' }}
+            />
+          </div>
           <button
             type='button'
-            className='rounded-full bg-lime px-5 py-2 text-xs font-semibold'
+            className='h-[52px] shrink-0 rounded-full bg-lime px-[29px] text-[18px]  font-medium'
+            style={{ fontFamily: 'Satoshi, var(--font-sans), sans-serif' }}
           >
             Search
           </button>

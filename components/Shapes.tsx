@@ -100,13 +100,17 @@ export const Logo = ({ dark = false }: { dark?: boolean }) => (
   <a
     href='/'
     className={cn(
-      'flex items-center gap-1.5 text-lg font-bold',
+      'flex items-center gap-1.5 text-[24px] font-bold leading-none tracking-[0]',
       dark ? 'text-ink' : 'text-white',
     )}
   >
     <span className='grid h-6 w-6 place-items-center rounded-md text-sm font-extrabold text-ink'>
-      <img src='/images/logo.png' alt='ByteSpace logo' width={18} height={18} />
+      <img src='/images/logo.png' alt='ByteSpace logo' width={30} height={30} />
     </span>
-    ByteSpace
+    <span
+      style={{ fontFamily: '"Clash Display", var(--font-display), sans-serif' }}
+    >
+      <sub className='text-[24px] from-neutral-200'>ByteSpace</sub>
+    </span>
   </a>
 )

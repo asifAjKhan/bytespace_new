@@ -9,7 +9,11 @@ export default function Header() {
     <header className='absolute inset-x-0 top-0 z-30 text-white'>
       <div className='mx-auto flex h-20 max-w-page items-center justify-between px-5 lg:px-0'>
         <Logo />
-        <nav className='hidden gap-8 text-xs md:flex' aria-label='Main'>
+        <nav
+          className='hidden gap-8 text-base font-medium leading-[1.2] md:flex'
+          aria-label='Main'
+          style={{ fontFamily: 'Satoshi, var(--font-sans), sans-serif' }}
+        >
           {nav.map((n, i) => (
             <a
               key={n}
@@ -22,7 +26,10 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <div className='hidden items-center gap-6 text-xs md:flex'>
+        <div
+          className='hidden items-center gap-6 text-base font-medium leading-[1.2] md:flex'
+          style={{ fontFamily: 'Satoshi, var(--font-sans), sans-serif' }}
+        >
           <a href='/login' className='opacity-80'>
             Sign In
           </a>
