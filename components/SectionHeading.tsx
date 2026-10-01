@@ -4,11 +4,15 @@ export default function SectionHeading({
   text,
   className,
   titleClassName,
+  textClassName,
+  textStyle,
 }: {
   title: React.ReactNode
   text: string
   className?: string
   titleClassName?: string
+  textClassName?: string
+  textStyle?: React.CSSProperties
 }) {
   return (
     <div className={cn('mx-auto text-center', className)}>
@@ -20,7 +24,13 @@ export default function SectionHeading({
       >
         {title}
       </h2>
-      <p className='mx-auto mt-4 max-w-[760px] text-xs leading-5 text-muted sm:text-[13px]'>
+      <p
+        className={cn(
+          'mx-auto mt-4 max-w-[760px] text-xs leading-5 text-muted sm:text-[13px]',
+          textClassName,
+        )}
+        style={textStyle}
+      >
         {text}
       </p>
     </div>
