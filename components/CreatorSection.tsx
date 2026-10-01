@@ -58,8 +58,8 @@ export default function CreatorSection() {
           </div>
           <Squiggle className='absolute right-[2%] top-[110px] z-40 h-40 w-32 -translate-x-10 rotate-180 object-contain sm:right-[4%] sm:top-[170px] sm:h-56 sm:w-44' />
         </div>
-        <div className='lg:pl-8'>
-          <h2 className='max-w-[520px] text-3xl font-bold leading-[1.15] text-[#25252B] sm:text-4xl lg:text-[48px]'>
+        <div className='lg:pl-8 flex flex-col gap-4'>
+          <h2 className='max-w-[520px] text-3xl font-bold leading-[1.15] text-[#25252B] sm:text-4xl lg:text-[48px] '>
             Create &amp; Manage Courses Easily.
           </h2>
           <p className='mt-8 max-w-[520px] text-base leading-[1.65] text-[#777982] sm:text-lg'>
@@ -69,9 +69,9 @@ export default function CreatorSection() {
           </p>
           <ul className='mt-6 space-y-3 text-sm text-[#25252B] sm:text-base'>
             {points.map((point) => (
-              <li key={point} className='flex items-center gap-2'>
+              <li key={point} className='flex items-center gap-3 text-[18px]'>
                 <CheckCircle2
-                  size={16}
+                  size={35}
                   className='shrink-0 fill-brand text-white'
                 />
                 {point}
