@@ -16,16 +16,19 @@ export default function Hero() {
   return (
     <section className='grid-lines relative overflow-hidden bg-brand text-white'>
       <div className='relative mx-auto max-w-page px-5 pt-32 text-center lg:px-0 lg:pt-36'>
-        <h1 className='mx-auto max-w-[760px] text-[34px] font-semibold leading-[1.15] sm:text-5xl lg:text-[56px]'>
+        <h1 className='mx-auto max-w-[1000px] text-[40px] font-semibold leading-[1.2] tracking-[-0.01em] sm:text-[56px] lg:text-[72px]'>
           Get Access to Hundreds Courses Available
         </h1>
-        <p className='mx-auto mt-6 max-w-xl text-xs opacity-80 sm:text-sm'>
+        <p
+          className='mx-auto mt-8 max-w-[900px] text-center text-[18px] font-normal leading-[1.6] tracking-normal opacity-80'
+          style={{ fontFamily: 'Satoshi, var(--font-sans), sans-serif' }}
+        >
           Unlock your creativity, gain valuable knowledge, and grow your
           business with our wide range of courses.
         </p>
         <form
           role='search'
-          className='mx-auto mt-8 flex max-w-[460px] items-center gap-2 rounded-full bg-white p-1.5 text-ink'
+          className='mx-auto mt-12 flex max-w-[460px] items-center gap-2 rounded-full bg-white p-1.5 text-ink'
         >
           <Search size={14} className='ml-3 shrink-0 text-muted' />
           <input
@@ -57,17 +60,17 @@ export default function Hero() {
             alt='Smiling student with laptop'
             className='absolute bottom-0 left-1/2 h-[340px] w-auto -translate-x-1/2 object-bottom [mask-image:linear-gradient(to_right,transparent,#000_14%,#000_86%,transparent)] sm:h-[420px] lg:h-[440px]'
           />
-          <div className='absolute h-[70px] w-[208px]    top-[520px] left-[280px] hidden  rounded-xl bg-white p-3 text-left text-ink  sm:block'>
-            <p className='text-xs font-semibold'>UI/UX Design</p>
+          <div className='absolute h-[70px] w-[208px]    top-[600px] left-[280px] hidden  rounded-xl bg-white p-3 text-left text-ink  sm:block'>
+            <p className='text-lg font-semibold'>UI/UX Design</p>
             <p className='text-[10px] text-muted'>
               200 Courses • 1000+ Students
             </p>
           </div>
-          <div className='absolute w-[232px] h-[131px]   right-2 top-[500px] left-[700px] rounded-xl bg-white p-3 text-left font-bold  text-ink sm:block'>
-            <p className='text-[15px]'>Learning Progress</p>
-            <p className='text-3xl font-semibold'>55%</p>
-            <div className='mt-1 h-1 rounded bg-[#f6f6f6dc]'>
-              <div className='h-1 w-1/2 rounded  bg-lime' />
+          <div className='absolute w-[232px] h-[131px]   right-2 top-[620px] left-[670px] rounded-xl bg-white p-3 text-left font-bold  text-ink sm:block'>
+            <p className='text-[14px] font-semibold mb-2'>Learning Progress</p>
+            <p className='text-5xl font-bold'>55%</p>
+            <div className='mt-1 h-2 rounded bg-[#f6f6f6dc]'>
+              <div className='h-2 w-1/2 rounded  bg-lime' />
             </div>
           </div>
           <div className='absolute w-[258px] h-[121px] bottom-16 left-[250px] rounded-xl bg-white p-2.5 text-left text-ink sm:block'>
