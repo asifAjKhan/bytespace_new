@@ -23,7 +23,9 @@ export default function LearningPaths() {
       <SectionHeading
         title='Explore Diverse Learning Paths at Bytespace'
         text="At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories."
-        titleClassName='text-3xl font-bold sm:text-4xl lg:text-[40px]'
+        titleClassName='text-[33px] font-bold sm:text-[40px] lg:text-[44px]'
+        textClassName='max-w-[1150px] text-[20px] leading-[1.6] sm:text-[21px]'
+        textStyle={{ fontFamily: 'Satoshi, var(--font-sans), sans-serif' }}
       />
       <div className='mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6'>
         {paths.map((p, i) => {
@@ -32,10 +34,10 @@ export default function LearningPaths() {
             <a
               key={p}
               href='#'
-              className='flex h-36 flex-col items-center justify-center gap-3 rounded-2xl border border-line bg-white text-base font-bold'
+              className='mx-auto flex h-[167px] w-full max-w-[167px] flex-col items-center justify-center gap-2 rounded-[24px] border border-[#CED0D3] bg-white text-base font-bold'
             >
-              <span className='grid h-12 w-12 place-items-center rounded-full bg-lime'>
-                <Icon size={24} strokeWidth={2.25} />
+              <span className='grid h-[58px] w-[58px] place-items-center rounded-full bg-lime'>
+                <Icon size={29} strokeWidth={2.25} />
               </span>
               {p}
             </a>
